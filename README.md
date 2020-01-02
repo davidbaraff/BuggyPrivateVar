@@ -4,6 +4,7 @@ Illustrates a Swift compiler bug (possibly package manager related).
 Simply run the tests on an iOS simulator (e.g. iPhone 8) and the test
 crashes with a strangely messed up stack.  Run it on macOS and it's fine though.
 
+```
 public class JustWow<T> {
     // If you comment out "private", then the regression test will not crash.
     // As is, when you run the regression test on an iOS simulator, it crashes strangely
@@ -18,4 +19,6 @@ public class JustWow<T> {
         print("Well, hi!")
     }
 }
+```
+
 
